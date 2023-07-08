@@ -1,0 +1,13 @@
+spring:
+  config:
+    activate:
+      on-profile: dev
+server:
+  port: 9000
+---
+spring:
+  config:
+    activate:
+      on-profile: testing
+server:
+  port: 9001
