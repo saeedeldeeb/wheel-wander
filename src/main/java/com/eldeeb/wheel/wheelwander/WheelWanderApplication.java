@@ -1,13 +1,13 @@
-package com.eldeeb.movatic.movaticegypt;
+package com.eldeeb.wheel.wheelwander;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MovaticEgyptApplication {
+public class WheelWanderApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MovaticEgyptApplication.class, args);
+		SpringApplication.run(WheelWanderApplication.class, args);
 	}
 
 }

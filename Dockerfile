@@ -10,7 +10,7 @@ COPY src /build/src/
 # Build the application
 RUN mvn clean
 RUN mvn package -DskipTests
-RUN mv /build/target/movatic-egypt-${VERSION}.jar /build/target/applications.jar
+RUN mv /build/target/wheel-wander-${VERSION}.jar /build/target/applications.jar
 
 # Stage 2: Create the production-ready image
 FROM openjdk:17-jdk-slim

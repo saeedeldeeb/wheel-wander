@@ -1,10 +1,10 @@
-package com.eldeeb.movatic.movaticegypt;
+package com.eldeeb.wheel.wheelwander;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MovaticEgyptApplicationTests {
+class WheelWanderApplicationTests {
 
 	@Test
 	void contextLoads() {
