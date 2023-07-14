@@ -2,12 +2,13 @@ spring:
   config:
     activate:
       on-profile: dev
+
 server:
-  port: 9000
+  port: 9001
 ---
 spring:
   config:
     activate:
       on-profile: testing
 server:
-  port: 9001
+  port: 9002
