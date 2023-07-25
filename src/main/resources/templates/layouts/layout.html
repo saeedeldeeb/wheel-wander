@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+
+    <!--    TODO: Add CSRF-->
+    <!-- CSRF Token -->
+    <!--    <meta name="_csrf" th:content="${_csrf.token}">-->
+
+    <title th:text="${title}"></title>
+
+    <!-- Styles -->
+    <style>
+        td {
+            word-break: break-all;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<!-- Include the header fragment -->
+<th:block th:replace="~{partials/header :: header}"></th:block>
+
+<!-- Navbar -->
+<!-- Include the navbar fragment -->
+<th:block th:replace="~{partials/navbar :: nav}"></th:block>
+
+<!-- Left Sidebar -->
+<!-- Include the left-sidebar fragment -->
+<th:block th:replace="~{partials/left-sidebar :: aside}"></th:block>
+
+<footer>
+    <!-- Include the footer fragment -->
+    <th:block th:replace="~{partials/footer :: footer}"></th:block>
+</footer>
+</body>
+</html>
