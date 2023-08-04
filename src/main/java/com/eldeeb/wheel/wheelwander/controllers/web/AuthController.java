@@ -1,4 +1,4 @@
-package com.eldeeb.wheel.wheelwander.controllers;
+package com.eldeeb.wheel.wheelwander.controllers.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
