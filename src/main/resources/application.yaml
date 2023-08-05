@@ -4,7 +4,11 @@ spring:
       on-profile: dev
   sql:
     init:
-      mode: always
+      mode: never
+  datasource:
+    url: jdbc:postgresql://localhost:5434/wheel_wander_db
+    username: wheel_wander
+    password: secret
 
 server:
   port: 9001

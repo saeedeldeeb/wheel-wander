@@ -25,7 +25,7 @@ public class User {
     private String lastName;
     @Column(name = "date_of_birth")
     private Date dateOfBirth;
-    @Column(name = "is_active")
+    @Column(name = "enabled")
     private Boolean isActive;
     @Column(name = "is_admin")
     private Boolean isAdmin;
