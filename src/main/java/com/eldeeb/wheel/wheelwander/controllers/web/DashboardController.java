@@ -9,6 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class DashboardController {
     @GetMapping("/home")
     public String home() {
-        return "layouts/layout";
+        return "fragments/dashboard";
     }
 }

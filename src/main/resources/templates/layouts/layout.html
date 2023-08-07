@@ -35,6 +35,12 @@
 <!-- Include the left-sidebar fragment -->
 <th:block th:replace="~{partials/left-sidebar :: aside}"></th:block>
 
+<!-- Content Wrapper. Contains page content -->
+<section class="content">
+    <!-- Include the content fragment -->
+    <th:block layout:fragment="content"></th:block>
+</section>
+
 <footer>
     <!-- Include the footer fragment -->
     <th:block th:replace="~{partials/footer :: footer}"></th:block>
