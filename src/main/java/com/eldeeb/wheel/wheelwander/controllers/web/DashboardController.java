@@ -13,4 +13,10 @@ public class DashboardController {
         model.addAttribute("title", "Dashboard");
         return "fragments/dashboard";
     }
+
+    @GetMapping("/users")
+    public String users(Model model) {
+        model.addAttribute("title", "Users");
+        return "fragments/users";
+    }
 }
