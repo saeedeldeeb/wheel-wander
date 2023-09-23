@@ -1,13 +1,11 @@
 package com.eldeeb.wheel.wheelwander.data.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Entity;
+import jakarta.persistence.*;
 
 import java.util.Date;
 
 @Entity
+@Table(name = "users")
 public class User {
     @Id
     @GeneratedValue
@@ -25,10 +23,8 @@ public class User {
     private String lastName;
     @Column(name = "date_of_birth")
     private Date dateOfBirth;
-    @Column(name = "enabled")
-    private Boolean isActive;
-    @Column(name = "is_admin")
-    private Boolean isAdmin;
+    @Column(name = "is_active")
+    private boolean isActive;
     @Column(name = "created_at")
     private Date createdAt;
     @Column(name = "updated_at")
@@ -90,20 +86,12 @@ public class User {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public Boolean getActive() {
+    public boolean getActive() {
         return isActive;
     }
 
     public void setActive(Boolean active) {
         isActive = active;
-    }
-
-    public Boolean getAdmin() {
-        return isAdmin;
-    }
-
-    public void setAdmin(Boolean admin) {
-        isAdmin = admin;
     }
 
     public Date getCreatedAt() {
@@ -133,7 +121,6 @@ public class User {
                 ", lastName='" + lastName + '\'' +
                 ", dateOfBirth=" + dateOfBirth +
                 ", isActive=" + isActive +
-                ", isAdmin=" + isAdmin +
                 ", createdAt=" + createdAt +
                 ", updatedAt=" + updatedAt +
                 '}';
